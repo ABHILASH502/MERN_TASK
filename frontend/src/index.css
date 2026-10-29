@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Pink palette */
+  --bg-app: linear-gradient(135deg, #fdf2f8 0%, #fff1f2 50%, #fce7f3 100%);
+  --bg-card: #ffffff;
+  --bg-input: #fdf2f8;
+  --bg-input-focus: #ffffff;
+  
+  --border-card: rgba(244, 114, 182, 0.25);
+  --border-input: #fbcfe8;
+  --border-input-focus: #ec4899;
+  
+  --text-title: #831843;
+  --text-body: #4b5563;
+  --text-muted: #9d174d;
+  --text-subtle: #f472b6;
+  
+  --teal-primary: #db2777;
+  --teal-hover: #be185d;
+  --teal-active: #9d174d;
+  --teal-light: #fce7f3;
+  --teal-focus-ring: rgba(236, 72, 153, 0.18);
+  
+  --footer-bg: #be185d;
+  --footer-text: #fdf2f8;
+  
+  --success: #059669;
+  --success-bg: #ecfdf5;
+  --success-border: #a7f3d0;
+  
+  --error: #dc2626;
+  --error-bg: #fef2f2;
+  --error-border: #fecaca;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background: var(--bg-app);
+  color: var(--text-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
